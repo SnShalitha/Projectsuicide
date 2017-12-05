@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.snshalitha.leavesheethandler.login">
+
+
+    <ImageView
+        android:id="@+id/login_backgroundimageView"
+        android:layout_width="wrap_content"
+        android:layout_height="645dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="4dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/login_test3" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="335dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toStartOf="@+id/login_backgroundimageView"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/user_icon" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5">
+
+        <Button
+            android:id="@+id/loginbutton"
+            android:layout_width="150dp"
+            android:layout_height="32dp"
+            android:layout_alignLeft="@+id/passwordautoCompleteTextView"
+            android:layout_alignStart="@+id/passwordautoCompleteTextView"
+            android:layout_centerVertical="true"
+            android:layout_alignTop="@id/forgotPasswordtextView"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginStart="36dp"
+            android:background="@drawable/rounded_white"
+            android:text="Button" />
+
+        <AutoCompleteTextView
+            android:id="@+id/userNameautoCompleteTextView"
+            android:layout_width="230dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="78dp"
+            android:layout_marginStart="78dp"
+            android:layout_marginTop="67dp"
+            android:background="@drawable/rounded_white"
+            android:hint="Enter User Name" />
+
+        <AutoCompleteTextView
+            android:id="@+id/passwordautoCompleteTextView"
+            android:layout_width="230dp"
+            android:layout_height="35dp"
+            android:layout_alignLeft="@+id/userNameautoCompleteTextView"
+            android:layout_alignStart="@+id/userNameautoCompleteTextView"
+            android:layout_alignTop="@+id/userNameautoCompleteTextView"
+            android:layout_marginTop="57dp"
+            android:background="@drawable/rounded_white"
+            android:completionHint="Enter Your Password"
+            android:hint="Enter Your Password" />
+
+        <TextView
+            android:id="@+id/forgotPasswordtextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/passwordautoCompleteTextView"
+            android:layout_marginEnd="26dp"
+            android:layout_marginRight="26dp"
+            android:layout_marginTop="10dp"
+            android:text="Forgot Your Password"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/signIntextView"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/loginbutton"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="26dp"
+            android:layout_marginTop="20dp"
+            android:autoLink="all"
+            android:linksClickable="true"
+            android:text="Dont Have a Account?Let's Sign In"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
